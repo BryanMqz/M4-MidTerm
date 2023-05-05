@@ -1,0 +1,25 @@
+#Folders and files to ignore
+__ignore__/
+
+### ROS ###
+devel/
+devel_isolated/
+logs/
+build/
+build_isolated/
+bin/
+install/
+.catkin_tools/
+.catkin_workspace
+src/ExternalPackages/
+src/.rosinstall.bak
+
+### Challenge ###
+
+
+### Others ###
+.vscode/
+.md
+
+__ignore__/*
+# End 
