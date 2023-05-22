@@ -1,0 +1,35 @@
+/**
+ * @file coordinates.proto
+ * @brief Protocol Buffer definition file for coordinates.
+ */
+
+syntax = "proto3";
+
+package multiplied_coordinates;
+
+/**
+ * @brief Represents an empty message.
+ */
+message Empty {}
+
+/**
+ * @brief Represents coordinates.
+ */
+message Coordinates {
+  float cx = 1; /**< X-coordinate. */
+  float cy = 2; /**< Y-coordinate. */
+  float time = 3; /**< Timestamp. */
+}
+
+/**
+ * @brief Service for obtaining coordinates.
+ */
+service CoordinateService {
+  /**
+   * @brief Retrieves coordinates.
+   * @param request Empty request.
+   * @return Coordinates response.
+   */
+  rpc GetCoordinates(Empty) returns (Coordinates) {}
+}
+

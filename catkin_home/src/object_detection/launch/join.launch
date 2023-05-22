@@ -1,0 +1,13 @@
+<!--
+ * @file camera_capture.launch
+ * @brief Archivo de lanzamiento para iniciar los nodos de captura de cámara y detección de objetos verdes.
+ *
+ * Este archivo de lanzamiento inicia dos nodos: camera_capture_node y greenObject. El nodo camera_capture_node se encarga
+ * de capturar imágenes de la cámara y publicarlas en un tópico de ROS. El nodo greenObject se encarga de detectar objetos
+ * verdes en las imágenes capturadas.
+-->
+
+<launch>
+	<node name="camera_capture_node" pkg="camera_capture" type="camera_capture_node.py" output="screen"> </node>
+    <node name="greenObject" pkg="object_detection" type="greenObject.py" output="screen"> </node>
+</launch>
