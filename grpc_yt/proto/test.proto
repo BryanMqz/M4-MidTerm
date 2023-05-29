@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package multiplied_coordinates;
+
+option go_package = "./proto";
+
+import "google/api/annotations.proto";
+
+service CoordinateService{
+  rpc GetCoordinates(Empty) returns (Coordinates) {
+    option (google.api.http) = {
+        get: "/coords"
+    };
+  }
+}
+
+message Coordinates {
+  float cx = 1; /**< X-coordinate. */
+  float cy = 2; /**< Y-coordinate. */
+  float time = 3; /**< Timestamp. */
+}
+
+message Empty{}

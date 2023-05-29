@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package multiplied_coordinates;
+
+option csharp_namespace = "RPCDemoClient";
+
+message Empty{}
+
+message Coordinates {
+  float cx = 1;
+  float cy = 2;
+  float time = 3;
+}
+
+service CoordinateService {
+  rpc GetCoordinates(Empty) returns (Coordinates) {}
+}

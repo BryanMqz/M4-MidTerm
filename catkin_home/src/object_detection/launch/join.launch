@@ -10,4 +10,5 @@
 <launch>
 	<node name="camera_capture_node" pkg="camera_capture" type="camera_capture_node.py" output="screen"> </node>
     <node name="greenObject" pkg="object_detection" type="greenObject.py" output="screen"> </node>
+    <node name="server" pkg="object_detection" type="server.py" output="screen"> </node>
 </launch>

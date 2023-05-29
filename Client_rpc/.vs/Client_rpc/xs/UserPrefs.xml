@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{E9D69560-C42F-41FE-94A5-F216D275333A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Client_rpc/Program.cs">
+    <Files>
+      <File FileName="Client_rpc/Program.cs" Line="15" Column="14" />
+      <File FileName="Client_rpc/protos/coordinates.proto" Line="5" Column="41" />
+      <File FileName="Client_rpc/protos/CoordinatesGrpc.cs" Line="7" Column="30" />
+      <File FileName="Client_rpc/protos/Coordinates.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Client_rpc" expanded="True">
+            <Node name="Client_rpc" expanded="True" selected="True">
+              <Node name="protos" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Client__rpc PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
