@@ -9,16 +9,10 @@ import coordinates_pb2_grpc
 
 def run():
     """
-    Realiza una llamada RPC al servicio de coordenadas para obtener las coordenadas.
+    Function to establish a connection with the gRPC server and retrieve coordinates.
 
-    Crea un canal inseguro de gRPC y llama al método GetCoordinates del servicio CoordinateService
-    para obtener las coordenadas. Luego, imprime las coordenadas recibidas.
-
-    Args:
-        None
-
-    Returns:
-        None
+    Create an insecure gRPC channel and call the GetCoordinates method of the CoordinateService 
+    service to get the coordinates. Then, it prints the received coordinates.
     """
 
     # NOTE(gRPC Python Team): .close() is possible on a channel and should be
@@ -32,16 +26,9 @@ def run():
 
 if __name__ == '__main__':
     """
-    Función principal del programa.
-
-    Configura el registro de mensajes de registro y llama a la función run().
-
-    Args:
-        None
-
-    Returns:
-        None
+    Main function of the program.
+    
+    Sets up the logging of log messages and calls the run() function.
     """
-
     logging.basicConfig()
     run()

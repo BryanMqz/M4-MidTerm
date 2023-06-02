@@ -7,31 +7,22 @@ import cv2
 
 def capture_image():
     """
-    Captura imágenes de la cámara y las publica en un nodo de ROS.
-
-    Utiliza la cámara para capturar imágenes, las convierte a un mensaje de ROS
-    y las publica en el tópico 'captured_image'.
-
-    Args:
-        None
-
-    Returns:
-        None
+    Function to capture images from a camera and publish them as ROS Image messages.
     """
 
     rospy.init_node('camera_capture_node', anonymous=True)
     image_pub = rospy.Publisher('captured_image', Image, queue_size=10)
     bridge = CvBridge()
 
-    camera = cv2.VideoCapture(0)  # Abre la cámara
+    camera = cv2.VideoCapture(0)  # Open the camera
 
-    rate = rospy.Rate(10)  # Frecuencia de publicación en Hz
+    rate = rospy.Rate(10)  # Publishing rate in Hz
 
     while not rospy.is_shutdown():
-        ret, frame = camera.read()  # Lee un fotograma de la cámara
+        ret, frame = camera.read()  # Read a frame from the camera
 
         if ret:
-            # Convierte la imagen de OpenCV a un mensaje de ROS
+            # Convert OpenCV image to ROS message
             image_msg = bridge.cv2_to_imgmsg(frame, encoding="bgr8")
 
             # Publica la imagen capturada
@@ -39,19 +30,13 @@ def capture_image():
 
         rate.sleep()
 
-    camera.release()  # Libera la cámara cuando se detiene el nodo
+    camera.release()  # Releases the camera when the node stops
 
 if __name__ == '__main__':
     """
     Función principal del programa.
 
     Inicia el nodo y llama a la función capture_image().
-
-    Args:
-        None
-
-    Returns:
-        None
     """
 
     print("Running") 

@@ -17,6 +17,14 @@ class GreenObjectDetector:
     y busca el contorno más grande en la imagen filtrada. Luego, calcula las coordenadas del
     centroide del contorno más grande y publica las coordenadas multiplicadas por 100 junto
     con una marca de tiempo.
+    
+    Attributes:
+        bridge (CvBridge): Bridge for converting ROS Image messages to OpenCV images.
+        image_sub (rospy.Subscriber): Subscriber for the "/captured_image" topic.
+        green_lower (tuple): Lower HSV values for green color range.
+        green_upper (tuple): Upper HSV values for green color range.
+        coordinate_multiplier (ctypes.CDLL): Library for multiplying coordinates.
+        coord_pub (rospy.Publisher): Publisher for the "/multiplied_coordinates" topic.
     """
 
     def __init__(self):
@@ -45,10 +53,7 @@ class GreenObjectDetector:
         Luego, multiplica las coordenadas por 100, las publica junto con una marca de tiempo.
 
         Args:
-            data: Mensaje de imagen capturada.
-
-        Returns:
-            None
+            data: Mensaje de ROS de imagen capturada.
         """
         cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
         hsv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2HSV)

@@ -7,7 +7,7 @@ https://drive.google.com/file/d/1_Jjkl4n7YI6dOtBKsnEQ8J_TD-5hPg-1/view?usp=shari
 
 ## Run ROS Launch File
 ~/M4-MidTerm/catkin_home$ \
-source devel/setup.bash \
+```source devel/setup.bash``` \
 ```roslaunch object_detection join.launch```
 
 ## C# exe

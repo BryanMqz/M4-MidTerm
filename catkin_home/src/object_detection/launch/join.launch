@@ -1,10 +1,10 @@
 <!--
- * @file camera_capture.launch
- * @brief Archivo de lanzamiento para iniciar los nodos de captura de cámara y detección de objetos verdes.
+ * @file join.launch
+ * @brief Launch file to start the camera capture and green object detection nodes.
  *
- * Este archivo de lanzamiento inicia dos nodos: camera_capture_node y greenObject. El nodo camera_capture_node se encarga
- * de capturar imágenes de la cámara y publicarlas en un tópico de ROS. El nodo greenObject se encarga de detectar objetos
- * verdes en las imágenes capturadas.
+ * This launch file starts two nodes: camera_capture_node and greenObject. The camera_capture_node takes care of
+ * to capture images from the camera and publish them in a ROS topic. The greenObject node is responsible for 
+ * detecting green objects in captured images.
 -->
 
 <launch>
