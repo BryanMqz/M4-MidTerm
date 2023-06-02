@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['call_5fgo_5fapi_0',['call_go_api',['../namespacejson__save.html#aac4b67d16f32875c3a3a1a8113fe6d8e',1,'json_save']]],
+  ['callback_1',['callback',['../classserver_1_1CoordinateService.html#ade3c046789a4762cdaed89b0be0e8c5e',1,'server::CoordinateService']]],
+  ['coordinateserviceclient_2',['CoordinateServiceClient',['../classRPCDemoClient_1_1CoordinateService_1_1CoordinateServiceClient.html#a8072628b5815b5135defef927a21db85',1,'RPCDemoClient.CoordinateService.CoordinateServiceClient.CoordinateServiceClient(grpc::Channel channel)'],['../classRPCDemoClient_1_1CoordinateService_1_1CoordinateServiceClient.html#aa31ccdc9535b14a13016bcb4e655f7c4',1,'RPCDemoClient.CoordinateService.CoordinateServiceClient.CoordinateServiceClient(grpc::CallInvoker callInvoker)'],['../classRPCDemoClient_1_1CoordinateService_1_1CoordinateServiceClient.html#a58649c1cfbf48ad547c2f1d272707c14',1,'RPCDemoClient.CoordinateService.CoordinateServiceClient.CoordinateServiceClient()'],['../classRPCDemoClient_1_1CoordinateService_1_1CoordinateServiceClient.html#a2ae1494add98e8b4506d39e640813695',1,'RPCDemoClient.CoordinateService.CoordinateServiceClient.CoordinateServiceClient(ClientBaseConfiguration configuration)']]]
+];

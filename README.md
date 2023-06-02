@@ -5,6 +5,16 @@ https://drive.google.com/file/d/1_Jjkl4n7YI6dOtBKsnEQ8J_TD-5hPg-1/view?usp=shari
 # DFD Diagram
 ![Diagram](M4-DFD.png)
 
+## Doxygen documentation 
+Doxygen Documentation can be found at ~/M4-MidTerm/dox_docs/html
+Open any .html file and you will be taken to the doxygen page \
+File reccomendation: ```md_README.html```
+(You may have to download and open the file to view it) \
+My path: ```file:///home/bryan/M4-MidTerm/dox_docs/html/md_README.html``` \
+Explore the tabs: namespaces, classes and files. \
+Demonstration: \
+<img src="doxygen.png" width="500" height="700" />
+
 ## Run ROS Launch File
 ~/M4-MidTerm/catkin_home$ \
 ```source devel/setup.bash``` \
