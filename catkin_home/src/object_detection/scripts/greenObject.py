@@ -25,17 +25,11 @@ class GreenObjectDetector:
 
         Inicializa los suscriptores, define el rango de color verde, carga la biblioteca externa
         'libcoordinate_multiplier.so' y crea el publicador para las coordenadas multiplicadas.
-
-        Args:
-            None
-
-        Returns:
-            None
         """
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/captured_image", Image, self.image_callback)
-        self.green_lower = (40, 50, 50)
-        self.green_upper = (80, 255, 255)
+        self.green_lower = (40, 110, 40)
+        self.green_upper = (80, 255, 200)
         
         # Step 3: Load the library
         self.coordinate_multiplier = ctypes.CDLL('/home/bryan/M4-MidTerm/catkin_home/src/object_detection/src/libcoordinate_multiplier.so')
@@ -81,18 +75,16 @@ class GreenObjectDetector:
         
         # Print the multiplied coordinates
         # rospy.loginfo("Multiplied coordinates: ({}, {})".format(cx, cy))
+    
+        # Show the image
+        cv2.imshow("Image window", cv_image)
+        cv2.waitKey(1)
 
 if __name__ == '__main__':
     """
     Función principal del programa.
 
     Inicia el nodo de ROS, crea una instancia de GreenObjectDetector y mantiene el nodo en ejecución.
-
-    Args:
-        None
-
-    Returns:
-        None
     """
     rospy.init_node('green_object_detector')
     #Run node

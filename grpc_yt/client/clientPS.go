@@ -26,6 +26,6 @@ func main() {
 		log.Fatalf("Failed to get coordinates: %v", err)
 	}
 
-	// Manejar la respuesta del servidor
+	// Manage server response
 	log.Printf("Received coordinates: %+v", resp)
 }
