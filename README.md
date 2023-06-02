@@ -26,3 +26,6 @@ Este paso es extra mas no necesario para la ejecucion final \
 # Screenshot Evidence
 <img src="ss.png" width="800" height="430" /> \
 ![Program](Evidence2.png)
+
+## CORS (Puntos Extra)
+CORS (Cross-Origin Resource Sharing) es una política de seguridad implementada por los navegadores web para controlar las solicitudes realizadas por scripts en una página web a recursos ubicados en un dominio diferente al de la página actual, por lo que las solicitudes entre diferentes orígenes están bloqueadas por el navegador. No obstante, CORS proporciona una forma de flexibilizar esta política de seguridad para permitir que los navegadores web realicen solicitudes a recursos en un origen diferente, siempre y cuando el servidor proporcione los encabezados CORS adecuados en las respuestas HTTP. Si el servidor responde con los encabezados CORS adecuados, el navegador permite la solicitud real. En conclusión, CORS afecta a una aplicación web al restringir las solicitudes que se pueden realizar desde un origen diferente al de la página actual. Al configurar CORS correctamente en el servidor, se pueden permitir solicitudes desde orígenes específicos y garantizar una comunicación segura y controlada entre dominios.
